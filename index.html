@@ -25,61 +25,80 @@
     </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-    <style>
-        /* dark mode thing */
-        :root { color-scheme: light dark; supported-color-schemes: light dark; }
-        /* Client-specific reset styles. */
-        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-        img { -ms-interpolation-mode: bicubic; }
+    
+<style type="text/css">
+		:root{
+			color-scheme:light dark;
+			supported-color-schemes:light dark;
+		}
+		body,table,td,a{
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+		}
+		table,td{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		img{
+			border:0;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+		}
+		table{
+			border-collapse:collapse !important;
+		}
+		body{
+			height:100% !important;
+			margin:0 !important;
+			padding:0 !important;
+			width:100% !important;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		u+#body a{
+			color:inherit;
+			text-decoration:none;
+			font-size:inherit;
+			font-family:inherit;
+			font-weight:inherit;
+			line-height:inherit;
+		}
+		#MessageViewBody a{
+			color:inherit;
+			text-decoration:none;
+			font-size:inherit;
+			font-family:inherit;
+			font-weight:inherit;
+			line-height:inherit;
+		}
+		a{
+			color:blue;
+			font-weight:bold;
+		}
+		a:hover{
+			color:black;
+			text-decoration:none !important;
+		}
+		a.button:hover{
+			background-color:black !important;
+		}
+	@media screen and (max-width: 600px){
+		.mobile{
+			width:100% !important;
+		}
 
-        /* General reset styles. */
-        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-        table { border-collapse: collapse !important; }
-        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
-
-        /* Prevent Apple blue links. */
-        a[x-apple-data-detectors] {
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        }
-
-        /* Prevent Gmail blue links. */
-        u + #body a {
-            color: inherit;
-            text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-        }
-
-        /* Prevent Samsung blue links. */
-        #MessageViewBody a {
-            color: inherit;
-            text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-        }
-
-        /* Provide default styles for links and hovers. */
-        a { color: blue; font-weight: bold; }
-        a:hover { color: black; text-decoration: none !important; }
-        a.button:hover { background-color: black !important; }
-
-        /* Responsive styles taking a desktop-first approach. */
-        @media screen and (max-width: 600px) {
-            .mobile { width: 100% !important; }
-
-        }
-    </style>
-</head>
+}</style></head>
 <!-- Set a body id for Gmail blue links and disable default margins and padding. -->
 <body id="body" style="Margin: 0 !important; padding: 0 !important;">
     <!-- Make your email an accessible article. -->
@@ -100,21 +119,21 @@
                           
                           <!-- Logo -->
                           <tr>
-                              <td align="left" style="padding: 30px 10px;">
+                              <td align="left" style="padding: 30px 50px; background-color: #ffffff;" bgcolor="#ffffff">
                                   <a href="#"><img alt="" src="https://i.ibb.co/NWqF8Sh/logo.png" width="190" border="0"></a>
                               </td>
                           </tr>
 
                           <!-- Hero -->
                           <tr>
-                              <td style="padding: 0 0px 90px 0px;" class="hero-td">
+                              <td style="padding: 0 0px 90px 0px;" class="hero-td" bgcolor="#ffffff">
                                   <img alt="" src="http://prideventures.in/wp-content/uploads/2020/12/blog-post-interior.jpg" width="600" border="0" style="display: block; max-width: 100%; min-width: 100px; width: 100%;" class="hero-img">
                               </td>
                           </tr>
 
                           <!-- Headline and Copy -->
                           <tr>
-                              <td style="padding: 0 10px;">
+                              <td style="padding: 0 40px;" bgcolor="#ffffff">
                                   <!-- Heading -->
                                   <h1 style="font-size: 3rem; font-weight: bold; line-height: 1.2; Margin: 0 0 1rem 0; padding: 0 0 32px 0;">Your DesignAlign Consultation</h1>
 
@@ -128,8 +147,8 @@
 
                           <!-- CTA -->
                           <tr>
-                              <td style="padding: 45px 10px;">
-                                  <a class="button" href="https://www.designalign.com/?utm_source=Mailchimp&utm_medium=email&utm_campaign=MiniDrip-1&utm_term=Learn+more+1" style="background: #F9423A; text-decoration: none; padding: 15px 80px; color: white; border-radius: 30px; display:inline-block; mso-padding-alt: 0;text-underline-color: blue"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;">Learn More &#8594</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
+                              <td style="padding: 45px 40px;" bgcolor="#ffffff">
+                                  <a class="button" href="https://www.designalign.com/?utm_source=Mailchimp&utm_medium=email&utm_campaign=MiniDrip-1&utm_term=Learn+more+1" style="background: #F9423A; text-decoration: none; padding: 15px 80px; color: white; border-radius: 30px; display:inline-block; mso-padding-alt: 0;text-underline-color: blue"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;">Learn More &rarr;</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
                                   </a>
                               </td>
                           </tr>
@@ -204,14 +223,14 @@
 
                         <!-- get quicker client commitments section  -->
                         <tr>
-                          <td style="padding: 90px 40px 90px 40px;">
+                          <td style="padding: 120px 40px;" bgcolor="#ffffff">
                               <center><img alt="" src="https://i.ibb.co/QjYWkj0/women.png" style="display: block; max-width: 100%; width: 100%; min-width: 100px;" width="600"></center>
                           </td>
                         </tr>
 
                         <!-- Headline and Copy -->
                         <tr>
-                            <td style="padding: 0 10px;">
+                            <td style="padding: 0 40px;" bgcolor="#ffffff">
                                 <!-- Heading -->
                                 <h1 style="font-size: 3rem; font-weight: bold; line-height: 1.2; Margin: 0 0 1rem 0; padding: 0 0 32px 0; text-align: left;">Helping You Get <br> Quicker Client Commitments.</h1> <!--maybe the line break screws thing on mobile, see later -->
 
@@ -225,21 +244,21 @@
 
                         <!-- CTA -->
                         <tr>
-                            <td style="padding: 45px 10px 45px 45px;">
-                                <a class="button" href="https://www.designalign.com/?utm_source=Mailchimp&utm_medium=email&utm_campaign=MiniDrip-1&utm_term=Learn+more+1" style="background: #F9423A; text-decoration: none; padding: 15px 80px; color: white; border-radius: 30px; display:inline-block; mso-padding-alt: 0;text-underline-color: blue"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;">Learn More &#8594</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
+                            <td style="padding: 45px 40px 45px 40px;" bgcolor="#ffffff">
+                                <a class="button" href="https://www.designalign.com/?utm_source=Mailchimp&utm_medium=email&utm_campaign=MiniDrip-1&utm_term=Learn+more+1" style="background: #F9423A; text-decoration: none; padding: 15px 80px; color: white; border-radius: 30px; display:inline-block; mso-padding-alt: 0;text-underline-color: blue"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;">Learn More &rarr;</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
                                 </a>
                             </td>
                         </tr> <!-- quicker client commitments section end -->
                           
                         <!-- Footer -->
                         <tr>
-                          <td align="left" style="padding: 30px 10px;">
+                          <td align="left" style="padding: 30px 50px;" bgcolor="#ffffff">
                               <a href="#"><img alt="" src="https://i.ibb.co/NWqF8Sh/logo.png" width="190" border="0"></a>
                           </td>
                         </tr>
 
                         <tr>
-                            <td style="padding: 0 10px 60px 10px;">
+                            <td style="padding: 0 40px 60px 40px;" bgcolor="#ffffff">
                                 <p style="color: #0B1E1F; font-size: 14px; margin: 0 0 1rem 0;">
                                     If you'd no longer like to receive these emails, <a href="https://designalign.us6.list-manage.com/unsubscribe?u=bfff80fd41544fd58f593b72e&id=bf55bf0554" style="color: #0B1E1F;font-weight: normal;">unsubscribe</a> here.
                                 </p>
